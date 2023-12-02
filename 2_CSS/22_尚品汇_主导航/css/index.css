@@ -1,0 +1,123 @@
+/* 基础设置 */
+.container {
+    width: 1190px;
+    margin: 0 auto;
+}
+
+/* 这里有个非常容易忽视的点
+    .topbar .welcome span,a {
+    font-size: 12px;
+    color: #666666;
+    }        
+    选中的是welcome类后代span，
+    和所有a元素，在写顶部导航时，
+    a元素一只没有继承父元素，是因为这
+    段代码，改为：
+    .topbar .welcome span,.welcome a {
+    font-size: 12px;
+    color: #666666;
+    }
+*/
+/* 基本没啥问题,伪元素选择器li：first-child（不是说里li的第一个孩子，而是第一个儿子li元素） */
+/* 下面这样写更好折叠 */
+/* #region顶部导航条start */
+.topbar {
+    height: 30px;
+    background-color: #ECECEC;
+}
+.topbar .welcome {
+    height: 30px;
+    line-height: 30px; 
+    font-size: 0px;
+} 
+.topbar .welcome span,.welcome a {
+    font-size: 12px;
+    color: #666666;
+}
+.welcome .welcomeyou {
+    margin-right: 28px;
+}
+.welcome .login {
+    padding-right: 10px;
+    border-right: 1px solid #666666;
+
+}
+.welcome .register {
+    padding-left: 10px;
+}
+.topbar-nav .list li {
+    float: left;
+}
+.topbar-nav .list {
+    height: 30px;
+    line-height: 30px;
+}
+.topbar-nav a {
+    padding: 0 15px;
+    border-right: 1px solid #666666;
+}
+.topbar-nav li:first-child a {
+    padding-left: 0;
+}
+.topbar-nav li:last-child a {
+    padding-right: 0;
+    border:0;
+}
+/* #endregion顶部导航条end */
+
+
+/* #region头部start */
+.header {
+    height: 120px;
+    /* background-color: skyblue; */
+}
+.header form {
+    /* 不知道为啥，写出来就是会出错 */
+    /* height: 120px; */
+    margin-top: 42px;
+    font-size: 0;
+}
+.header form input {
+    height: 34px;
+    width: 508px;
+    border: 1px solid #DD302D;
+}
+.header form button {
+    height: 36px;
+    width: 80px;
+    background-color: #DD302D;
+    background-image: url('../images/serch_icon.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    vertical-align: top;
+}
+/* #endregion头部end */
+
+
+/* #region主导航start */
+.main-nav {
+    height: 48px;
+    border-bottom: 1px solid #DD302D;
+}
+.item-classify {
+    height: 48px;
+    width: 190px;
+    text-align: center;
+    background: #DD302D;
+    line-height: 48px;
+    font-size: 16px;
+    color: #fff;
+}
+.main-nav-list {
+    height: 48px;
+    line-height: 48px;
+}
+.main-nav ul li {
+    float: left;
+    margin: 0 10px;
+    font-size: 0;
+    font-size: 16px;
+    color: #333333;
+}
+/* #endregion主导航end */
+

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>布局技巧3</title>
+    <style>
+        .outer {
+            width: 400px;
+            height: 400px;
+            background-color: gray;
+            text-align: center;
+            line-height: 400px;
+            font-size: 0px;
+        }
+        /* 注意由于字体设计的原因，图片中轴线与x持平，而x的设计是偏下的，这使得图片不是垂直居中，解决方法看代码 */
+        img {
+            vertical-align: middle;
+        }
+        span {
+            font-size: 40px;
+            vertical-align: middle;
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <span>出来玩啊？</span>
+        <img src="../images/悟空.jpg" alt="悟空">
+    </div>
+</body>
+</html>

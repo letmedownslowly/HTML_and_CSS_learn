@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>尚硅谷官网</title>
+    <style>
+         * { 
+        font-family: Arial; 
+        font-size: 14px; 
+        margin: 0; 
+        padding: 0; 
+        border: none; 
+        }
+        a { text-decoration: none; }
+        ul { list-style: none; }
+        /* body,html {
+            width: 100%;
+            height: 100%;
+        }
+        body {
+            background-image: url('../images/bg.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        } */
+        body {
+            background: url('../images/bg.jpg') no-repeat top center/cover
+        }
+        header {
+            height: 70px;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header-nav {
+            display: flex;
+        }
+        .header-nav li {
+            border: 1px solid white;
+            padding: 10px;
+            margin: 0 10px;
+            border-radius: 8px;
+        }
+        .header-nav li a {
+            color: white;
+            font-size: 20px;
+        }
+        .header-nav li:last-child {
+            margin-right: 0;
+        }
+        .header-nav li:first-child {
+            margin-left: 0;
+        }
+        .content-nav {
+            width: 1000px;
+            height: 300px;
+            margin: auto;
+        }
+        /* 注意这里函数要敲空格，写成calc(100vh-70px)不生效 */
+        .content {
+            display: flex;
+            height: calc(100vh - 70px);
+        }
+        .co-list {
+            height: 300px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .co-list li {
+            width: 180px;
+            height: 200px;
+            background-color: rebeccapurple;
+            display: flex;
+            flex-direction: column;
+            align-items:center ;
+            justify-content: space-evenly;
+            transition: 0.2s linear;
+        }
+        .co-list li a {
+            font-size: 20px;
+            color: white;
+        }
+        .co-list li:hover {
+            box-shadow: 0 0 20px black;
+            cursor: pointer;
+        }
+        .co-list li:nth-child(1) {
+            background-color: #595CA8;
+        }
+        .co-list li:nth-child(2) {
+            background-color: #FF9D2E;
+        }
+        .co-list li:nth-child(3) {
+            background-color: #01A6DE
+        }
+        .co-list li:nth-child(4) {
+            background-color: #015E91;
+        }
+        .co-list li:nth-child(5) {
+            background-color: #1DC128;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="../images/logo.png" alt="logo">
+        <ul class="header-nav">
+            <li><a href="#">国内校区</a></li>
+            <li><a href="#">缅甸校区</a></li>
+            <li><a href="#">非洲校区</a></li>
+            <li><a href="#">美国校区</a></li>
+        </ul>
+    </header>
+    <div class="content">
+        <div class="content-nav">
+            <ul class="co-list">
+                <li>
+                    <img src="../images/item1.png" alt="item1">
+                    <span><a href="#">我的邮箱</a></span>
+                </li>
+                <li>
+                    <img src="../images/item2.png" alt="item2">
+                    <span><a href="#">云服务</a></span>
+                </li>
+                <li>
+                    <img src="../images/item3.png" alt="item3">
+                    <span><a href="#">手机课堂</a></span>
+                </li>
+                <li>
+                    <img src="../images/item4.png" alt="item4">
+                    <span><a href="#">微信服务</a></span>
+                </li>
+                <li>
+                    <img src="../images/item5.png" alt="item5">
+                    <span><a href="#">在线客服</a></span>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
+
+
+

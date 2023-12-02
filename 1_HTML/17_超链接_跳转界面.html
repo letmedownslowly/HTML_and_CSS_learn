@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>超链接_跳转界面</title>
+</head>
+<body>
+    <!-- 在当前页签打开 -->
+    <!-- target不写的时候默认self -->
+    <a href="https://miaosha.jd.com/" target="_self">去秒杀</a>
+    <!-- 创建一个新页签打开 -->
+    <a href="https://www.baidu.com/" target="_blank">去百度</a>
+    <!-- 我们可以看出来，去秒杀和去百度之间有一个小小的空格，这是因为这两个代码之间敲了一个空格，如果把这两行代码写在一行，中间的空格消失,如果在这两代码中间敲多个空格多个回车同一个回车的效果 -->
+    <a href="./10_HTML排版标签.html">去排版标签</a>
+    <!-- 看笔记这样是违规的，用检查可以看出来 -->
+    <a href="./10_HTML排版标签.html">
+        <a href="./10_HTML排版标签.html"> 去排版标签2</a>
+    </a>
+    <a href="./10_HTML排版标签.html">
+        <img width="50" src="./奥特曼.jpg" alt="奥特曼">
+    </a>
+</body>
+</html>

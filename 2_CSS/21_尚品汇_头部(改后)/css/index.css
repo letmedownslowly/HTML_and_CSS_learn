@@ -1,0 +1,77 @@
+/* 基础设置 */
+.container {
+    width: 1190px;
+    margin: 0 auto;
+}
+
+/* #region顶部导航条start */
+.topbar {
+    height: 30px;
+    background-color: #ECECEC;
+}
+.topbar .welcome {
+    height: 30px;
+    line-height: 30px; 
+    font-size: 0px;
+} 
+.welcome span,a {
+    font-size: 12px;
+    color: #666666;
+}
+.welcome .welcomeyou {
+    margin-right: 28px;
+}
+.welcome .login {
+    padding-right: 10px;
+    border-right: 1px solid #666666;
+
+}
+.welcome .register {
+    padding-left: 10px;
+}
+.topbar-nav .list li {
+    float: left;
+}
+.topbar-nav .list {
+    height: 30px;
+    line-height: 30px;
+}
+.topbar-nav a {
+    padding: 0 15px;
+    border-right: 1px solid #666666;
+}
+.topbar-nav li:first-child a {
+    padding-left: 0;
+}
+.topbar-nav li:last-child a {
+    padding-right: 0;
+    border:0;
+}
+/* #endregion顶部导航条end */
+
+
+/* #region头部start */
+.header {
+    height: 120px;
+    background-color: skyblue;
+}
+.header form {
+    margin-top: 42px;
+    font-size: 0;
+}
+.header form input {
+    height: 34px;
+    width: 508px;
+    border: 1px solid #DD302D;
+}
+.header form button {
+    height: 36px;
+    width: 80px;
+    background-color: #DD302D;
+    background-image: url('../images/serch_icon.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    vertical-align: top;
+}
+/* #endregion头部end */
+

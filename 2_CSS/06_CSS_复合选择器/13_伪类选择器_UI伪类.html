@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>伪类选择器_UI伪类</title>
+    <style>
+        /* 注意与input:focus的区别 */
+        /* 选中的是勾选的复选框或单选按钮 */
+        /* 背景色和颜色不奏效，你看到的好看的复选框是通过js写的 */
+        input:checked {
+            width: 100px;
+            height: 100px;
+        }
+
+        /* 选中的是被禁用的input元素 */
+        input:disabled {
+            background-color: gray;
+        }
+
+        /* 选中的是可用的input元素 */
+        input:enabled {
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <input type="checkbox">
+    <input type="radio" name="gender">
+    <input type="radio" name="gender">
+    <input type="text">
+    <input type="text" disabled>
+</body>
+</html>

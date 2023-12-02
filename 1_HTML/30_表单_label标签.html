@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>表单_label标签</title>
+</head>
+<body>
+    <form action="http://search.jd.com/search"> <!-- 工作中action可以用???占位 -->
+        <!-- 那个边框没有对齐是因为敲了回车，相当于空格，相对齐不敲回车或者全部敲回车就行 -->
+        <label for="zhanghu">账户</label>
+        <input id="zhanghu" type="text" name="account" maxlength="10">
+        <br>
+
+        <!-- <label for="mima">密码</label><input id="mima" type="password" name="pwd" maxlength="6"> -->
+
+        <!-- 第二种做关联的方式 -->
+        <label>
+            密码
+            <input id="mima" type="password" name="pwd" maxlength="6">
+        </label>
+        <br>
+        性别：
+        <input type="radio" name="gender" value="male" id="nan">
+        <label for="nan">男</label>
+        <input type="radio" name="gender" value="female" id="nv">
+        <label for="nv">女</label>
+        <br>
+        爱好：
+        <label>
+            <input type="checkbox" name="hobby" value="smoke">抽烟
+        </label>
+        <input type="checkbox" name="hobby" value="drink">喝酒
+        <input type="checkbox" name="hobby" value="perm">烫头
+        <br>
+
+        其他：
+        <textarea name="other" cols="20" rows="3"></textarea>
+        <br>
+        籍贯：
+        <select name="place">
+            <option value="冀">河北</option>
+            <option value="鲁">山东</option>
+            <option value="沪">上海</option>
+            <option value="川">四川</option>
+        </select><br>
+
+        <input type="hidden" name="tag" value="123">
+        <br>
+        <input type="submit" value="确认">
+
+        <input type="reset" value="重置">
+
+        <input type="button" value="检测账户是否被注册">
+
+    </form>
+</body>
+</html>

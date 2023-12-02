@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>04_动画与过渡的区别</title>
+    <style>
+        .outer {
+            width: 1000px;
+            height: 200px;
+            border: 1px solid black;
+        }
+        .inner {
+            width: 100px;
+            height: 100px;
+        }
+        /* 用过渡 */
+        .inner1 {
+            background-color: pink;
+            transition: 3s linear;
+        }
+        .outer:hover .inner1 {
+            transform: translate(900px);
+        }
+          /* 用动画 */
+        .inner2 {
+            background-color: deeppink;
+            animation: atguigu 3s linear forwards;
+        }
+        @keyframes atguigu {
+            from {
+
+            }
+            to {
+                transform: translate(900px);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="inner inner1"></div>
+        <div class="inner inner2"></div>
+    </div>
+</body>
+</html>

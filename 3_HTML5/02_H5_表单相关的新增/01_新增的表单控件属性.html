@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>01_新增的表单控件属性</title>
+</head>
+<body>
+    <form action="">
+        账号：<input 
+                type="text" 
+                name="account" 
+                placeholder="请输入账号" 
+                required 
+                autofocus 
+                autocomplete="on"
+                pattern="\w{6}"
+              >
+              <!-- 正则表达式，js讲，这里意思是数字字母下划线中选，凑够六位 -->
+        <br>
+        密码：<input type="password" name="pwd" placeholder="请输入密码">
+        <br>
+        <!-- required 写在单选框的男上时，表示单选必须要选，但表单提交结果可以为女 -->
+        性别：
+            <input type="radio" value="male" name="gender">男
+            <input type="radio" value="female" name="gender">女
+        <br>
+         <!-- required 写在复选框的抽烟上时，表示该选项（抽烟）必须要选 -->
+        爱好：
+            <input type="checkbox" value="smoke" name="hobby">抽烟
+            <input type="checkbox" value="drink" name="hobby">喝酒
+            <input type="checkbox" value="perm" name="hobby">烫头
+        <br>
+        其他：<textarea name="other" placeholder="其他"></textarea>
+        <br>
+        <button>提交</button>
+    </form>
+</body> 
+</html>

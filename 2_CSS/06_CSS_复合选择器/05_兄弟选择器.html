@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>兄弟选择器</title>
+    <style>
+        /* 代表紧紧相邻的兄弟，往下看，上行代码不变，自己试试 */
+        /* div+p {
+            color: red;
+        }
+        span+p {
+            color: blue;
+        } */
+        /* 选中div后所有的兄弟p元素 */
+        div~p {
+            color: red;
+        }
+        li+li {
+            color: orange;
+        }
+    </style>
+</head>
+<body>
+    <div>尚硅谷</div>
+    <p>前端</p>
+    <p>Java</p>
+    <p>大数据</p>
+    <p>UI</p>
+    <ul>
+        <li>主页</li>
+        <li>秒杀</li>
+        <li>订单</li>
+        <li>我的</li>
+    </ul>
+    <span>aaa</span>
+    <h1>hahah</h1>
+    <p>sss</p>
+</body>
+</html>

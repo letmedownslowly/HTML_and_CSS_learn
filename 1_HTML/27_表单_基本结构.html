@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>表单_基本结构</title>
+</head>
+<body>
+    <!-- 搜索https://www.baidu.com看到的是百度的主页，表单的方式要加/s，（search），直接看到的是搜索结果 -->
+    <form action="https://www.baidu.com/s">
+        <input type="text" name="wd">
+        <button>去百度搜索</button>   
+    </form>
+    <hr>
+    <form action="http://search.jd.com/search" target="_blank">
+        <input type="text" name="keyword">
+        <button>去京东搜索</button>
+    </form>
+    <form action="http://search.jd.com/search" target="_self" method="get">
+        <input type="text" name="keyword">
+        <button>去京东搜索</button>
+    </form>
+    <a href="http://search.jd.com/search?keyword=手机" target="_blank">搜索手机</a>
+</body>
+</html>
